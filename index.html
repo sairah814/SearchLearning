@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Wonders Quiz</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900|Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header>
+            <img class="head-image" src="images/us-outline.png" />
+            <h1 class="head-text">American Natural Wonders</h1>
+        </header>
+        <section class="main quiz-landing">
+            <h1>Where are America's Natural Wonders?</h1>
+            <h3>Identify the states they belong in.</h3>
+            <button id="start">Start Journey</button>
+        </section>
+        <section class="main quiz">
+            <div class="question-image"><img class="image" src="images/grandcanyon.JPG" /></div>
+            <h3 class="question">Which state is this in?</h3>
+            <div class="answer-selection">
+                <ul class="answer-choices">
+                    <!--<li>
+                        <label class="radio-choice">
+                            <input class="ans-choice" type="radio" name="choice" value="0" /> <i></i><span class="choice"> Texas</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-choice">
+                            <input class="ans-choice" type="radio" name="choice" value="1" /> <i></i><span class="choice"> Michigan</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-choice">
+                            <input class="ans-choice" type="radio" name="choice" value="2" /> <i></i> <span class="choice">Arizona</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-choice">
+                            <input class="ans-choice" type="radio" name="choice" value="3" /> <i></i><span class="choice"> Washington</span>
+                        </label>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="progress-nav">
+                <h4>Question <span id="current-question"></span> of <span class="numquestions"></span></h4>
+                <button id="next">Next<i class="fa fa-chevron-circle-right"></i></button>
+                <p id="unanswered"></p>
+            </div>
+        </section>
+        <section class="main results">
+            <h1 class="relative-feedback">Nice Try!</h1>
+            <h2 class="score">You got a <span class="user-score"></span> out of <span class="numquestions"></span>!</h2>
+            <button id="try-again">Try Again <i class="fa fa-repeat"></i></button>
+            <p class="results-text">Review your results below:
+                <br/>
+                <div class="results-list">
+                    <!--<div class="answer-image">
+                        <img class="image" src="images/grandcanyon.JPG" />
+                    </div>
+                    <div class="answer-details">
+                        <div id="user-answer"><i class="fa fa-check-circle"></i>You got this one!</div>
+                        <div id="correct-answer">Answer: Arizona</div>
+                        <div id="answer-description">The Grand Canyon, the largest canyon in the world, is actually located in 3 states, although it mainly stretches across Arizona.</div>
+                    </div>-->
+                </div>
+            </p>
+        </section>
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
